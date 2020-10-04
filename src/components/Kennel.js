@@ -1,24 +1,19 @@
 import React from "react";
+import { Route } from "react-router-dom";
+import { NavBar } from "./nav/NavBar";
+import { ApplicationViews } from "./ApplicationViews";
 import "./Kennel.css";
-import { AnimalCard } from "./animal/AnimalCard";
-import { EmployeeCard } from "./employee/EmployeeCard";
-import { CustomerCard } from "./customer/CustomerCard";
-import { LocationCard } from "./location/LocationCard";
-import "./animal/Animal.css";
-import "./customer/Customer.css";
-import "./employee/Employee.css";
-import "./location/Location.css";
+// import { AnimalCard } from "./animal/AnimalCard";
+// import { EmployeeCard } from "./employee/EmployeeCard";
+// import { CustomerCard } from "./customer/CustomerCard";
+// import { LocationCard } from "./location/LocationCard";
 
 export const Kennel = () => (
     <>
-        <h2>Nashville Kennels</h2>
-        <small>Loving care when you're not there.</small>
-        <address>
-            <div>Visit Us at the Nashville North Location</div>
-            <div>500 Puppy Way</div>
-        </address>
+        <NavBar />
+        <ApplicationViews />
 
-        <h2>Animals</h2>
+     {/* <h2>Animals</h2>
         <article className="animals">
             <AnimalCard />
             <AnimalCard />
@@ -41,6 +36,6 @@ export const Kennel = () => (
             <CustomerCard />
             <CustomerCard />
             <CustomerCard />
-        </article>
+        </article> */}
     </>
 )
