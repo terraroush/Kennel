@@ -6,6 +6,20 @@
             "breed": "Poodle",
             "customerId": 1,
             "locationId": 2
+        },
+        {
+            "id": 2,
+            "name": "Sophie",
+            "breed": "cute cat",
+            "customerId": 2,
+            "locationId": 2
+        },
+        {
+            "id": 3,
+            "name": "George",
+            "breed": "curious cat",
+            "customerId": 2,
+            "locationId": 2
         }
     ],
     "customers": [
@@ -13,6 +27,11 @@
             "id": 1,
             "name": "Hannah Hall",
             "address": "7002 Chestnut Ct"
+        },
+        {
+            "id": 2,
+            "name": "Terra Roush",
+            "address": "Goodlettsville"
         }
     ],
     "employees": [],
