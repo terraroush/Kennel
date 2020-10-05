@@ -2,11 +2,12 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { LocationCard } from "./location/LocationCard"
-import { EmployeeCard } from "./employee/EmployeeCard"
 import { AnimalList } from "./animal/AnimalList"
 import { CustomerList } from "./customer/CustomerList"
+import { EmployeeList } from "./employee/EmployeeList"
 import { AnimalProvider } from "./animal/AnimalProvider"
 import { CustomerProvider } from "./customer/CustomerProvider"
+import { EmployeeProvider } from "./employee/EmployeeProvider"
 
 export const ApplicationViews = () => {
     return (
@@ -33,9 +34,12 @@ export const ApplicationViews = () => {
                 </Route>
             </CustomerProvider>
 
-            <Route path="/employees">
-                <EmployeeCard />
-            </Route>
+            <EmployeeProvider>
+                <Route path="/employees">
+                    <EmployeeList />
+                </Route>
+            </EmployeeProvider>
+            
         </>
     )
 }
