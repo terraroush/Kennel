@@ -10,14 +10,14 @@
         {
             "id": 2,
             "name": "Sophie",
-            "breed": "cute cat",
+            "breed": "Cat",
             "customerId": 2,
             "locationId": 2
         },
         {
             "id": 3,
             "name": "George",
-            "breed": "curious cat",
+            "breed": "Cat",
             "customerId": 2,
             "locationId": 2
         }
@@ -32,9 +32,30 @@
             "id": 2,
             "name": "Terra Roush",
             "address": "Goodlettsville"
+        },
+        {
+            "id": 3,
+            "name": "Carly Benjamin",
+            "address": "Champaign, IL"
         }
     ],
-    "employees": [],
+    "employees": [
+        {
+            "id": 1,
+            "name": "Steve Zissou",
+            "locationId": 1
+        },
+        {
+            "id": 2,
+            "name": "Frank Ocean",
+            "locationId": 2
+        },
+        {
+            "id": 3,
+            "name": "John Waters",
+            "locationId": 2
+        }
+    ],
     "locations": [
         {
             "id": 1,
