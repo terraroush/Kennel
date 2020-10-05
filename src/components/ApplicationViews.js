@@ -3,9 +3,10 @@ import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { LocationCard } from "./location/LocationCard"
 import { EmployeeCard } from "./employee/EmployeeCard"
-import { CustomerCard } from "./customer/CustomerCard"
 import { AnimalList } from "./animal/AnimalList"
+import { CustomerList } from "./customer/CustomerList"
 import { AnimalProvider } from "./animal/AnimalProvider"
+import { CustomerProvider } from "./customer/CustomerProvider"
 
 export const ApplicationViews = () => {
     return (
@@ -26,9 +27,11 @@ export const ApplicationViews = () => {
                 <LocationCard />
             </Route>
 
-            <Route path="/customers">
-                <CustomerCard />
-            </Route>
+            <CustomerProvider>
+                <Route path="/customers">
+                    <CustomerList />
+                </Route>
+            </CustomerProvider>
 
             <Route path="/employees">
                 <EmployeeCard />

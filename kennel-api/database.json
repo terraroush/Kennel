@@ -20,6 +20,13 @@
             "breed": "Cat",
             "customerId": 2,
             "locationId": 2
+        },
+        {
+            "id": 4,
+            "name": "Cowboy",
+            "breed": "Dog",
+            "customerId": 3,
+            "locationId": 1
         }
     ],
     "customers": [
@@ -54,6 +61,11 @@
             "id": 3,
             "name": "John Waters",
             "locationId": 2
+        },
+        {
+            "id": 4,
+            "name": "Willy",
+            "locationId": 1
         }
     ],
     "locations": [
