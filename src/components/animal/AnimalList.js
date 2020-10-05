@@ -14,7 +14,6 @@ export const AnimalList = () => {
 		
     }, [])
 
-
     return (	
 		<div className="animals">
 		    {console.log("AnimalList: Render")}
