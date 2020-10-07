@@ -27,12 +27,6 @@
       "breed": "Dog",
       "customerId": 3,
       "locationId": 1
-    },
-    {
-      "name": "Gandalf",
-      "locationId": 1,
-      "customerId": 2,
-      "id": 5
     }
   ],
   "customers": [
