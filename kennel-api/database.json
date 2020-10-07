@@ -1,83 +1,92 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Doodles",
-            "breed": "Poodle",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-            "id": 2,
-            "name": "Sophie",
-            "breed": "Cat",
-            "customerId": 2,
-            "locationId": 2
-        },
-        {
-            "id": 3,
-            "name": "George",
-            "breed": "Cat",
-            "customerId": 2,
-            "locationId": 2
-        },
-        {
-            "id": 4,
-            "name": "Cowboy",
-            "breed": "Dog",
-            "customerId": 3,
-            "locationId": 1
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
-        },
-        {
-            "id": 2,
-            "name": "Terra Roush",
-            "address": "Goodlettsville"
-        },
-        {
-            "id": 3,
-            "name": "Carly Benjamin",
-            "address": "Champaign, IL"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "Steve Zissou",
-            "locationId": 1
-        },
-        {
-            "id": 2,
-            "name": "Frank Ocean",
-            "locationId": 2
-        },
-        {
-            "id": 3,
-            "name": "John Waters",
-            "locationId": 2
-        },
-        {
-            "id": 4,
-            "name": "Willy",
-            "locationId": 1
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "8422 Johnson Pike"
-        },
-        {
-            "id": 2,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 2,
+      "name": "Sophie",
+      "breed": "Cat",
+      "customerId": 2,
+      "locationId": 2
+    },
+    {
+      "id": 3,
+      "name": "George",
+      "breed": "Cat",
+      "customerId": 2,
+      "locationId": 2
+    },
+    {
+      "id": 4,
+      "name": "Cowboy",
+      "breed": "Dog",
+      "customerId": 3,
+      "locationId": 1
+    },
+    {
+      "name": "Gandalf",
+      "locationId": 1,
+      "customerId": 2,
+      "id": 5
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hannah Hall",
+      "address": "7002 Chestnut Ct",
+      "email": "hh@aol.com"
+    },
+    {
+      "id": 2,
+      "name": "Terra Roush",
+      "address": "Goodlettsville",
+      "email": "tr@aol.com"
+    },
+    {
+      "id": 3,
+      "name": "Carly Benjamin",
+      "address": "Champaign, IL",
+      "email": "cb@aol.com"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Steve Zissou",
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "name": "Frank Ocean",
+      "locationId": 2
+    },
+    {
+      "id": 3,
+      "name": "John Waters",
+      "locationId": 2
+    },
+    {
+      "id": 4,
+      "name": "Willy",
+      "locationId": 1
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
+  ]
 }
