@@ -27,6 +27,12 @@
       "breed": "Dog",
       "customerId": 3,
       "locationId": 1
+    },
+    {
+      "name": "Gandalf the Grey",
+      "locationId": 1,
+      "customerId": 2,
+      "id": 5
     }
   ],
   "customers": [
@@ -69,6 +75,21 @@
       "id": 4,
       "name": "Willy",
       "locationId": 1
+    },
+    {
+      "name": "Aqua Fina",
+      "locationId": 2,
+      "id": 5
+    },
+    {
+      "name": "Michael Jordan",
+      "locationId": 1,
+      "id": 6
+    },
+    {
+      "name": "Bob Bobbin",
+      "locationId": 2,
+      "id": 7
     }
   ],
   "locations": [

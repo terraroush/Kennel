@@ -15,9 +15,9 @@ export const EmployeeForm = (props) => {
         getLocations()
     }, [])
 
-    const constructNewEmplyee = () => {
+    const constructNewEmployee = () => {
 
-        const locationId = +(location.current.value)
+        const locationId = +location.current.value
 
         if (locationId === 0) {
             window.alert("Please select a location")
@@ -26,7 +26,7 @@ export const EmployeeForm = (props) => {
                 name: name.current.value,
                 locationId
             })
-            .then(() => history.pushState("/emplyees"))
+            .then(() => history.push("/employees"))
         }
     }
 
@@ -38,7 +38,7 @@ export const EmployeeForm = (props) => {
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="employeeName">Employee name: </label>
-                    <input type="text" id="employeeName" ref={name} required autoFocus className="form-control" placeholder="employee name" />
+                    <input type="text" id="employeeName" ref={name} required autoFocus className="form-control" placeholder="Employee name" />
                 </div>
             </fieldset>
             <fieldset>
@@ -46,9 +46,9 @@ export const EmployeeForm = (props) => {
                     <label htmlFor="location">Assign to location: </label>
                     <select defaultValue="" name="location" ref={location} id="employeeLocation" className="form-control" >
                         <option value="0">Select a location</option>
-                        {locations.map(l => (
-                            <option key={l.id} value={l.id}>
-                                {l.name}
+                        {locations.map(loc => (
+                            <option key={loc.id} value={loc.id}>
+                                {loc.name}
                             </option>
                         ))}
                     </select>
