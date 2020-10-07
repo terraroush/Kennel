@@ -11,6 +11,7 @@ import { EmployeeProvider } from "./employee/EmployeeProvider"
 import { LocationProvider } from "./location/LocationProvider"
 import { AnimalForm } from "./animal/AnimalForm"
 import { EmployeeForm } from "./employee/EmployeeForm"
+import { LocationForm } from "./location/LocationForm"
 import { AnimalDetail } from "./animal/AnimalDetail"
 
 
@@ -45,8 +46,14 @@ export const ApplicationViews = () => {
             </AnimalProvider>
 
             <LocationProvider>
-                <Route path="/locations">
+                <Route exact path="/locations">
                     <LocationList />
+                </Route>
+            </LocationProvider>
+
+            <LocationProvider>
+                <Route path="/locations/create">
+                    <LocationForm />
                 </Route>
             </LocationProvider>
 
@@ -64,7 +71,7 @@ export const ApplicationViews = () => {
 
             <EmployeeProvider>
                 <LocationProvider>
-                    <Route exact path="/employees/create">
+                    <Route path="/employees/create">
                         <EmployeeForm />
                     </Route>
                 </LocationProvider>

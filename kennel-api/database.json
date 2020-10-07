@@ -78,7 +78,7 @@
     },
     {
       "name": "Aqua Fina",
-      "locationId": 2,
+      "locationId": 3,
       "id": 5
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "name": "Bob Bobbin",
-      "locationId": 2,
+      "locationId": 3,
       "id": 7
     }
   ],
@@ -102,6 +102,11 @@
       "id": 2,
       "name": "Nashville South",
       "address": "209 Emory Drive"
+    },
+    {
+      "name": "The New Kennel",
+      "address": "123 Troddington Way",
+      "id": 3
     }
   ]
 }
