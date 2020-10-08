@@ -13,6 +13,8 @@ import { AnimalForm } from "./animal/AnimalForm"
 import { EmployeeForm } from "./employee/EmployeeForm"
 import { LocationForm } from "./location/LocationForm"
 import { AnimalDetail } from "./animal/AnimalDetail"
+import { EmployeeDetail } from "./employee/EmployeeDetail"
+import { AnimalSearch } from "./animal/AnimalSearch"
 
 
 // this file works in tandem with the navBar and defines a routing path for different components such as "home", "animalList", "animalForm", etc. Whatever is at the center, inside Route, has access to components supplied from the outer layers, or parents, such as "animalProvider" to "animalList", or "animalProvider"/"locationProvider"/"customerProvider" to "animalForm". exact path is necessary when one path contains what is in another. for example: "/" is also in everything else, so it must be exact; same for "/animals" is in "/animals/create", so "/animals" should have exact also.
@@ -25,6 +27,7 @@ export const ApplicationViews = () => {
 
             <AnimalProvider>
                 <Route exact path="/animals">
+                    <AnimalSearch />
                     <AnimalList />
                 </Route>
             </AnimalProvider>
@@ -34,7 +37,17 @@ export const ApplicationViews = () => {
                     <AnimalDetail />
                 </Route>
             </AnimalProvider>
-            
+
+            <AnimalProvider>
+                <LocationProvider>
+                    <CustomerProvider>
+                    <Route exact path="/animals/edit/:animalId(\d+)">
+                            <AnimalForm />
+                        </Route>
+                    </CustomerProvider>
+                </LocationProvider>
+            </AnimalProvider>
+
             <AnimalProvider>
                 <LocationProvider>
                     <CustomerProvider>
@@ -67,6 +80,22 @@ export const ApplicationViews = () => {
                 <Route exact path="/employees">
                     <EmployeeList />
                 </Route>
+            </EmployeeProvider>
+
+            <EmployeeProvider>
+                <LocationProvider>
+                    <Route exact path="/employees/detail/:employeeId(\d+)">
+                        <EmployeeDetail />
+                    </Route>
+                </LocationProvider>
+            </EmployeeProvider>
+
+            <EmployeeProvider>
+                <LocationProvider>
+                    <Route exact path="/employees/edit/:employeeId(\d+)">
+                        <EmployeeForm />
+                    </Route>
+                </LocationProvider>
             </EmployeeProvider>
 
             <EmployeeProvider>

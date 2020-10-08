@@ -3,9 +3,9 @@
     {
       "id": 1,
       "name": "Doodles",
-      "breed": "Poodle",
-      "customerId": 1,
-      "locationId": 2
+      "breed": "Dog",
+      "locationId": 2,
+      "customerId": 1
     },
     {
       "id": 2,
@@ -30,6 +30,7 @@
     },
     {
       "name": "Gandalf the Grey",
+      "breed": "Mouse",
       "locationId": 1,
       "customerId": 2,
       "id": 5
@@ -87,9 +88,9 @@
       "id": 6
     },
     {
-      "name": "Bob Bobbin",
-      "locationId": 3,
-      "id": 7
+      "id": 8,
+      "name": "Sarah Swimmerman",
+      "locationId": 3
     }
   ],
   "locations": [
